@@ -1,4 +1,4 @@
-﻿using NCMDotNetCore.ConsoleApp;
+﻿using NCMDotNetCore.ConsoleApp.EFCoreExamples;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -38,12 +38,18 @@ Console.WriteLine("Hello, World!");
 //}
 ////Ado.Net Read
 
-AdoDotNetExample adoDotNetExample = new AdoDotNetExample();
-//adoDotNetExample.Read();
-//adoDotNetExample.Create("title","author","content");
-//adoDotNetExample.Update(4,"New title ", "New author", "New content");
-//adoDotNetExample.Delete(5);
-adoDotNetExample.Edit(1);
+//AdoDotNetExample adoDotNetExample = new AdoDotNetExample();
+////adoDotNetExample.Read();
+////adoDotNetExample.Create("title","author","content");
+////adoDotNetExample.Update(4,"New title ", "New author", "New content");
+////adoDotNetExample.Delete(5);
+////adoDotNetExample.Edit(1);
 
+EFCoreExample efCoreExample = new EFCoreExample();
+efCoreExample.Run();
 
+//DapperExample dapperExample = new DapperExample();
+//dapperExample.Run();
+
+Console.WriteLine("EFcore finished");
 Console.ReadKey();

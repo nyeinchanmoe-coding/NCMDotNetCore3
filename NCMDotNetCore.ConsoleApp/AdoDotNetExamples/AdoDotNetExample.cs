@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NCMDotNetCore.ConsoleApp
+namespace NCMDotNetCore.ConsoleApp.AdoDotNetExamples
 {
     internal class AdoDotNetExample
     {
@@ -15,7 +15,8 @@ namespace NCMDotNetCore.ConsoleApp
             DataSource = "DESKTOP-C8JODRL",
             InitialCatalog = "NCMDotNetCore",
             UserID = "sa",
-            Password = "sa@123"
+            Password = "sa@123",
+            TrustServerCertificate = true
         };
         public void Read()
         {
@@ -62,14 +63,14 @@ namespace NCMDotNetCore.ConsoleApp
                 Console.WriteLine("No data found.");
                 return;
             }
-                 DataRow dr = dt.Rows[0];    
-                Console.WriteLine("Blog Id =>" + dr["BlogId"]);
-                Console.WriteLine("Blog Title =>" + dr["BlogTitle"]);
-                Console.WriteLine("Blog Author =>" + dr["BlogAuthor"]);
-                Console.WriteLine("Blog Content =>" + dr["BlogContent"]);
-                Console.WriteLine("------------------------------------");
+            DataRow dr = dt.Rows[0];
+            Console.WriteLine("Blog Id =>" + dr["BlogId"]);
+            Console.WriteLine("Blog Title =>" + dr["BlogTitle"]);
+            Console.WriteLine("Blog Author =>" + dr["BlogAuthor"]);
+            Console.WriteLine("Blog Content =>" + dr["BlogContent"]);
+            Console.WriteLine("------------------------------------");
         }
-        public void Create(string title, string author , string content)
+        public void Create(string title, string author, string content)
         {
             SqlConnection connection = new SqlConnection(_sqlConnectionStringBuilder.ConnectionString);
             connection.Open();
@@ -100,7 +101,7 @@ namespace NCMDotNetCore.ConsoleApp
       ,[BlogAuthor] = @BlogAuthor
       ,[BlogContent] = @BlogContent
  WHERE BlogId = @BlogId";
-            SqlCommand cmd = new SqlCommand(query, connection); 
+            SqlCommand cmd = new SqlCommand(query, connection);
             cmd.Parameters.AddWithValue("@BlogId", id);
             cmd.Parameters.AddWithValue("@BlogTitle", title);
             cmd.Parameters.AddWithValue("@BlogAuthor", author);
@@ -118,7 +119,7 @@ namespace NCMDotNetCore.ConsoleApp
             string query = "Delete from Tbl_Blog where BlogId = @BlogId";
             SqlCommand cmd = new SqlCommand(query, connection);
             cmd.Parameters.AddWithValue("@BlogId", id);
-           
+
             int result = cmd.ExecuteNonQuery();
 
             connection.Close();
