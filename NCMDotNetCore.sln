@@ -5,7 +5,9 @@ VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NCMDotNetCore.ConsoleApp", "NCMDotNetCore.ConsoleApp\NCMDotNetCore.ConsoleApp.csproj", "{DF53690F-9066-48AC-A486-6CD246356223}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NCMDotNetCore.RestApi", "NCMDotNetCore.RestApi\NCMDotNetCore.RestApi.csproj", "{69E307E2-35C9-4168-B01E-4A1400F3913F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NCMDotNetCore.RestApi", "NCMDotNetCore.RestApi\NCMDotNetCore.RestApi.csproj", "{69E307E2-35C9-4168-B01E-4A1400F3913F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NCMDotNetCore.Shared", "NCMDotNetCore.Shared\NCMDotNetCore.Shared.csproj", "{FEAE8190-1E51-4759-B62D-B156294994DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{69E307E2-35C9-4168-B01E-4A1400F3913F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69E307E2-35C9-4168-B01E-4A1400F3913F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69E307E2-35C9-4168-B01E-4A1400F3913F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEAE8190-1E51-4759-B62D-B156294994DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEAE8190-1E51-4759-B62D-B156294994DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEAE8190-1E51-4759-B62D-B156294994DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEAE8190-1E51-4759-B62D-B156294994DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
