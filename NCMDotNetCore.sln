@@ -9,6 +9,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NCMDotNetCore.RestApi", "NC
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NCMDotNetCore.Shared", "NCMDotNetCore.Shared\NCMDotNetCore.Shared.csproj", "{FEAE8190-1E51-4759-B62D-B156294994DE}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NCMDotNetCore.RestApiWithNLayer", "NCMDotNetCore.RestApiWithNLayer\NCMDotNetCore.RestApiWithNLayer.csproj", "{7CFCD7B6-2831-41C3-9102-132800E34E1A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NCMDotNetCore.ConsoleAppHttpClient", "NCMDotNetCore.ConsoleAppHttpClient\NCMDotNetCore.ConsoleAppHttpClient.csproj", "{C6D4E7A7-C5E6-44C1-8FFF-8956AEAF24DA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NCMDotNetCore.ConsoleAppHttpClientExamples", "NCMDotNetCore.ConsoleAppHttpClientExamples\NCMDotNetCore.ConsoleAppHttpClientExamples.csproj", "{F12A5255-CB13-4587-9E13-17CCBA7B76D2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +33,18 @@ Global
 		{FEAE8190-1E51-4759-B62D-B156294994DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEAE8190-1E51-4759-B62D-B156294994DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEAE8190-1E51-4759-B62D-B156294994DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CFCD7B6-2831-41C3-9102-132800E34E1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CFCD7B6-2831-41C3-9102-132800E34E1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CFCD7B6-2831-41C3-9102-132800E34E1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CFCD7B6-2831-41C3-9102-132800E34E1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6D4E7A7-C5E6-44C1-8FFF-8956AEAF24DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6D4E7A7-C5E6-44C1-8FFF-8956AEAF24DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6D4E7A7-C5E6-44C1-8FFF-8956AEAF24DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6D4E7A7-C5E6-44C1-8FFF-8956AEAF24DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F12A5255-CB13-4587-9E13-17CCBA7B76D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F12A5255-CB13-4587-9E13-17CCBA7B76D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F12A5255-CB13-4587-9E13-17CCBA7B76D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F12A5255-CB13-4587-9E13-17CCBA7B76D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
